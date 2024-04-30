@@ -1,15 +1,18 @@
 .images{
 display: grid;
-grid-template-columns: 430px 430px 430px;
-grid-template-rows: 500px 500px 500px;
-justify-content: center;
-/* align-items: center; */
+grid-template-columns: repeat(3, 1fr); /* Three columns */
+    grid-template-rows: repeat(3, 1fr); /* Three rows */
+
 gap: 10px;
 }
-body {
+/* body {
     scroll-behavior: smooth;
+} */
+.card {
+    width: 100%; /* Full width for mobile */
+    max-width: 300px; /* Adjust as needed */
+    margin: 10px;
 }
-
 .card img{
     /* border: 1px solid black; */
     border-radius: 10px;
